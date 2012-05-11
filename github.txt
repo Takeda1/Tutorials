@@ -1,0 +1,56 @@
+Make github account
+
+Eclipse repository prerequisits:
+Install JDK, JRE
+Start > Search Envir > set HOME: %USERPROFILE%
+Install Eclipse:
+Install egit:  EGIT - http://download.eclipse.org/egit/updates
+Open git repository perspective in eclipse
+Window > Preferenes > Search "ssh" > SSH2 > Key Management > Generate DSA Key... > Save & copy paste into github Account Settings
+
+Create a new eclipse repository:
+1.  Create github repository
+2.  Create Java Project
+3.  Don't use default location
+4.  Location:  C:\Programming\git\"Project Name"
+5.  Project Name: "Project Name"
+6.  Right click "Project Name" > Team > Share Project > Use parent folder > Check Project Name > Create repository > Finish
+7.  Commit and check files wanted
+8.  Right click "Remotes" under "Git Repositories" tab > Create remote, name: "origin"
+9.  Change URI > paste URI, select Protocol ssh > Finish > Save and Push
+
+To push in Eclipse:
+Right Click > Team > Commit.     Right Click > Team > Push
+
+
+//Needs more comments
+To Clone in Eclipse:
+Clone and add projects to working sets or something
+
+
+Other github repository prerequisits:
+Install git
+git config --global user.name "Username"
+git config --global user.email "Email"
+
+Create a new repository in Git Bash:
+1.  mkdir Project Name
+2.  cd Project Name
+3.  git init
+4.  touch README
+5.  git add README
+6.  git commit -m 'first commit'
+7.  git remote add origin "Put the URI here"
+8.  git push -u origin master
+
+
+To Clone in Git Bash:
+git clone URI
+
+To push in Git Bash:
+cd to repository
+git commit -am "Message"
+git push
+
+To pull in Git Bash:
+git pull
