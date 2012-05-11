@@ -20,10 +20,11 @@ Create a new eclipse repository:
 9.  Change URI > paste URI, select Protocol ssh > Finish > Save and Push
 
 To push in Eclipse:
-Right Click > Team > Commit.     Right Click > Team > Push
+Right Click new Files > Team > Add to Index
+Right Click Project > Team > Commit.     Right Click > Team > Push
 
 
-//Needs more comments
+//Needs more info here
 To Clone in Eclipse:
 Clone and add projects to working sets or something
 
@@ -32,6 +33,7 @@ Other github repository prerequisits:
 Install git
 git config --global user.name "Username"
 git config --global user.email "Email"
+git config --global push.default upstream
 
 Create a new repository in Git Bash:
 1.  mkdir Project Name
@@ -49,6 +51,7 @@ git clone URI
 
 To push in Git Bash:
 cd to repository
+git add "document name"
 git commit -am "Message"
 git push
 
